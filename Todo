@@ -13,7 +13,9 @@ docker-compose down --volumes
 
 docker compose attach python_app
 
+docker compose exet -it service_name
+
 shuni ichiga kirib tekshirib olamiz
 
-
+docker inspect container_id
 
