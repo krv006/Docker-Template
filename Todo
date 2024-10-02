@@ -1,0 +1,15 @@
+docker run --name postgres_container -e POSTGRES_PASSWORD=1 -d -p 5433:5432 postgres
+docker exec -it postgres_container psql -U postgres
+CREATE DATABASE mydatabase;
+
+
+docker compose down
+docker-compose logs postgres_service
+docker-compose up --build
+docker image ls
+docker container prune
+docker rmi 0890c59ffdc8 c71ce15f855e
+docker-compose down --volumes
+
+
+
