@@ -1,13 +1,11 @@
 import psycopg2
 import os
 
-
 db_name = os.getenv("POSTGRES_DB")
 db_user = os.getenv("POSTGRES_USER")
 db_password = os.getenv("POSTGRES_PASSWORD")
 db_host = os.getenv("POSTGRES_HOST")
 db_port = os.getenv("POSTGRES_PORT", "5432")
-
 
 
 def get_connection():
@@ -18,7 +16,6 @@ def get_connection():
         host=db_host,
         port=db_port
     )
-
 
 
 def create_books_table():
@@ -34,7 +31,6 @@ def create_books_table():
     conn.commit()
     cursor.close()
     conn.close()
-
 
 
 def add_book(id, name, price):
@@ -65,9 +61,8 @@ def view_books():
         print("Hozircha kitoblar yo'q.")
 
 
-
 def main():
-    create_books_table() 
+    create_books_table()
     while True:
         print("Menu:")
         print("1. Kitob qo'shish")
@@ -92,4 +87,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

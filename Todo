@@ -11,5 +11,9 @@ docker container prune
 docker rmi 0890c59ffdc8 c71ce15f855e
 docker-compose down --volumes
 
+docker compose attach python_app
+
+shuni ichiga kirib tekshirib olamiz
+
 
 
