@@ -186,7 +186,13 @@ all join
     right join -> birinchi jadval togri kelishi 
     cross join -> jadvalning har bir yozuvini bir-biriga birlashtiradi
     full join -> Farq yochasga boglanish 
-transaction, atomic transaction, view, trigger, partition, pl/pgsql
+    
+transaction
+atomic transaction
+view
+trigger
+partition
+pl/pgsql
 
 
 
@@ -195,30 +201,43 @@ ttl ->
 expire time -> biror bir ishga ketkan vaqt  
 
 memory use in python 
+
 garbage collector 
+
 reference count 
 
 web protocol -> http, websockt kradi 
 http methods -> get, put, putch, delete, post
 how works web -> ?
 websocket -> real time 
-graphql -> api dan kuchli bolgan tizim
-cron -> ?
+graphql -> api dan kuchli bolgan tizim va qulaylik jihati bor
+cron -> bu backup olib qolish degani
 
 Big O notation
 sorts (merge, quick, bubble, insert, select)
 search (linear, binary)
+        linear ->  elementlarni birma-bir tekshiradi.
+        binary -> ma'lumotlar to'plamidagi elementlarni tartiblangan holda qidiradi
 
-context manager (custom), generator, decorator, iterator, 
+context manager (custom) -> with bn ishlatiladi
+generator-> yield kalit sozi bilan boglanadi 
+decorator -> funksyaga boglanadi va funksya qaytaradi 
+iterator -> __iter__, __next__  doonder method lari orqali ishlaydi 
 ci/cd -> server bn ishlash (ci da test korinadi, cd da esa serverga borib keladi)
 kanban -> 
 celery, redis, rabbitmq, elasticsearch
 
-design patterns
-OOP/SOLID/YAGNI/KISS
-PUT with Patch
-SCRUM
-Sql/NoSql
+design patterns -> dizayn
+
+
+PUT -> ma'lum bir resursni yangilash yoki o'rnatish uchun ishlatiladi
+
+Patch -> resursning bir qismini yangilash uchun ishlatiladi
+
+SCRUM -> agile metodologiyasi doirasida ishlov berish va loyiha boshqarish uchun qo'llaniladigan bir uslubdir.
+
+Sql/NoSql -> asosi farqi sql da strukturali boladi va jadval shaklida saqlaydi va vertikal olchaydi, malumotlar foreign key orqali boglanadi
+nosql da esa json, mongoDb, ustunli -> Cassandra kabi boladi va garizantal olchaydi, malumotlar cheklangan boladi
 
 
 """
