@@ -186,7 +186,9 @@ all join
     right join -> birinchi jadval togri kelishi 
     cross join -> jadvalning har bir yozuvini bir-biriga birlashtiradi
     full join -> Farq yochasga boglanish 
-    
+
+trancate -> table di tozalash polni bitta 
+
 transaction
 atomic transaction
 view
@@ -248,3 +250,17 @@ Korilishi kerak bogan narsalar
 dataclasses
 
 """
+
+# from dataclasses import dataclass
+#
+#
+# @dataclass
+# class Car:
+#     make: str
+#     model: str
+#     year: int
+#     price: float
+#
+#
+# my_car = Car(make="Toyota", model="Corolla", year=2020, price=20000.0)
+# print(my_car)  # Car(make='Toyota', model='Corolla', year=2020, price=20000.0)
